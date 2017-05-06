@@ -1,8 +1,10 @@
 body {
   background-color: #F76B1D;
   background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
-  padding-top: 36px;
+  padding: 36px 10px 36px;
 }
+
+
 
 @font-face {
   font-family: Proxima Nova;
@@ -57,16 +59,37 @@ body {
   }
 }
 
-.story {
+.body {
   background: white;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  padding: 20px;
+
+  .story {
+    margin: 20px auto 0;
+    max-width: 400px;
+
+    a {
+      color: #666;
+      position: relative;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #aaa;
+    }
+  }
 
   p {
     color: #666;
     font-family: Proxima Nova, Tahoma, Helvetica, Verdana, sans-serif;
     line-height: 1.4;
+    margin: 0 0 0.75em;
     font-size: 16px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -76,11 +99,15 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 20px 0 0;
 
   li {
 
     a {
+      display: block;
+      height: 36px;
       margin: 10px;
+      width: 36px;
 
       &, &:hover {
         text-decoration: none;
@@ -97,5 +124,11 @@ body {
         width: 36px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  body {
+    padding-top: 10px;
   }
 }
