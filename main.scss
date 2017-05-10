@@ -1,10 +1,8 @@
 body {
   background-color: #F76B1D;
   background: linear-gradient(135deg, #F76B1D 0%, #F76B1D 30%, #ffb631 100%) fixed;
-  padding: 36px 10px 36px;
+  padding: 20px 10px 20px;
 }
-
-
 
 @font-face {
   font-family: Proxima Nova;
@@ -28,34 +26,6 @@ body {
   img {
     width: 100%;
     visibility: hidden;
-  }
-
-  .headline {
-    padding: 20px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    h1,
-    h2 {
-      color: white;
-      font-weight: 700;
-      line-height: 1.2;
-      margin: 0;
-      text-align: center;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
-    }
-
-    h1 {
-      font-size: 20px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    h2 {
-      font-size: 16px;
-      margin-top: 5px;
-    }
   }
 }
 
