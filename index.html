@@ -11,6 +11,12 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script>
+    function onImageLoad(img) {
+      var imgWrapper = img.parentNode;
+      imgWrapper.className += imgWrapper.className ? ' loaded' : 'loaded';
+    }
+    </script>
   </head>
   <body class="flex">
     <!--[if lte IE 9]>
@@ -21,7 +27,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 presuade">
-          <img src="images/resilience.jpg" />
+          <img src="images/resilience.jpg" onload="onImageLoad(this)"/>
         </div>
         <div class="col-md-6 col-md-offset-3 body">
           <section class="story">
