@@ -10,7 +10,8 @@ body {
 }
 
 * {
-  transition: background-color .15s ease-out, color .15s ease-out, border-color .15s ease-out, fill .15s ease-out, box-shadow .15s ease-out;
+  
+  transition: all .15s ease-out;
 }
 
 .presuade {
