@@ -1,1 +1,1 @@
-The short version of my coding journey.
+How I found coding (the short version).
